@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login Page</title>
+    <script src="./public/login.js"></script>
+    <link rel="stylesheet" href="./public/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-content">
+            <h1>Login</h1>
+
+            <form id="login-form">
+                <label for="username-input">Username or Email:</label><br>
+                <input type="text" id="username-input" name="username" required><br>
+                <label for="password-input">Password:</label><br>
+                <input type="password" id="password-input" name="password" required><br>
+                <div class="login-buttons">
+                    <button type="submit" class="loginButton" id="submitButton">Login</button>
+                    <button type="button" class="loginButton" id="cancelButton">Cancel</button>
+                    <button type="button" class="loginButton" id="forgotPasswordButton">Forgot Password?</button>
+                </div>
+            </form>
+            <div id="login-error-message"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Adam Alemi. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

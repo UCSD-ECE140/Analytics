@@ -1,0 +1,446 @@
+            /* Default styles */
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #584996;
+            }
+            
+            header {
+                background-color: #333;
+                color: #fff;
+            }
+            
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+            
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            
+            nav ul li a {
+                display: block;
+                padding: 10px;
+                color: #fff;
+                text-decoration: none;
+            }
+            
+            nav ul li a:hover {
+                background-color: #fff;
+                color: #333;
+            }
+            
+            main {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            #hero {
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+                color: #fff;
+                padding: 100px 10px;
+            }
+            
+            #hero h1 {
+                font-size: 50px;
+                margin: 0;
+            }
+            
+            #hero p {
+                font-size: 24px;
+                line-height: 1.5;
+                margin: 20px 0;
+            }
+            
+            .cta {
+                display: inline-block;
+                background-color: #ff6363;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                margin-top: 10px;
+                display: inline-block;
+            }
+            
+            .cta:hover {
+                background-color: #ff4545;
+            }
+            
+            #quotes {
+                text-align: center;
+                padding: 25px 20px;
+            }
+            
+            #quotes ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #quotes h2 {
+                margin-bottom: 20px;
+            }
+            
+            #quotes li {
+                font-size: 1.2rem;
+                line-height: 1.5;
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            
+            footer p {
+                margin: 0;
+            }
+            /*contact page*/
+            
+            #contact {
+                background-color: #423c52;
+                padding: 50px;
+                border-radius: 5px;
+                margin-top: 30px;
+                color: #fff;
+            }
+            
+            #contact h2 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .contact-method {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            
+            .contact-method i {
+                margin-right: 10px;
+                font-size: 24px;
+            }
+            
+            .contact-method span {
+                width: 80px;
+                font-weight: bold;
+            }
+            
+            .contact-method a {
+                color: #d3f6fc;
+                text-decoration: none;
+            }
+            
+            .contact-method a:hover {
+                text-decoration: underline;
+            }
+            /*registration page*/
+            
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            
+            form>div {
+                width: 48%;
+            }
+            
+            form>div>label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            
+            input[type="text"],
+            input[type="number"],
+            input[type="email"],
+            input[type="password"] {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                font-size: 1rem;
+            }
+            
+            .login-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+            }
+            
+            .loginButton {
+                width: 200px;
+                margin: 5px;
+            }
+            
+            button[type="submit"],
+            button[type="button"] {
+                background-color: #ff6363;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+            
+            button[type="submit"]:hover,
+            button[type="button"]:hover {
+                background-color: #ff4545;
+            }
+            
+            #registration-message {
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .form-content {
+                background-color: #897ac7;
+                border-radius: 10%;
+                padding: 20px;
+                align-content: center;
+            }
+            /* Responsive styles */
+            
+            @media (max-width: 768px) {
+                /* Navigation */
+                nav {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                nav ul {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+                nav ul li {
+                    margin-bottom: 10px;
+                }
+                /* Hero section */
+                #hero {
+                    padding: 50px 20px;
+                }
+                #hero h1 {
+                    font-size: 36px;
+                }
+                #hero p {
+                    font-size: 18px;
+                }
+                /* Features section */
+                #features h2 {
+                    font-size: 24px;
+                }
+                #features li {
+                    font-size: 16px;
+                }
+                /* Registration page */
+                form>div {
+                    width: 100%;
+                }
+            }
+            
+            @media(max-width: 576px) {
+                #hero {
+                    padding: 50px 10px;
+                }
+                #hero h1 {
+                    font-size: 30px;
+                }
+                #hero p {
+                    font-size: 16px;
+                }
+                nav {
+                    padding: 0;
+                    height: auto;
+                }
+                nav ul {
+                    width: 100%;
+                    flex-direction: column;
+                    display: none;
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    padding: 10px;
+                    background-color: #333;
+                    z-index: 999;
+                    text-align: center;
+                }
+                nav ul li {
+                    margin-bottom: 10px;
+                }
+                nav ul li a {
+                    display: inline-block;
+                    padding: 5px;
+                }
+                nav .toggle-nav {
+                    display: block;
+                    color: #fff;
+                    font-size: 20px;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                .cta {
+                    font-size: 16px;
+                }
+                #features h2 {
+                    font-size: 20px;
+                }
+                #features li {
+                    font-size: 14px;
+                }
+                form>div {
+                    width: 100%;
+                }
+                .login-buttons {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    margin-top: 20px;
+                }
+                .loginButton {
+                    width: 45%;
+                    margin-bottom: 10px;
+                }
+            }
+            /* Responsive styles for contact page */
+            
+            @media screen and (max-width: 768px) {
+                #contact {
+                    padding: 30px;
+                }
+                .contact-method {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-bottom: 10px;
+                }
+                .contact-method i {
+                    margin-right: 0;
+                    margin-bottom: 5px;
+                }
+                .contact-method span {
+                    width: 100%;
+                    margin-bottom: 5px;
+                }
+            }
+            /* Styling for dialog box */
+            
+            .dialog-box {
+                position: fixed;
+                top: 30%;
+                left: 0;
+                width: 100%;
+                height: 70%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 9999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                transform: translateY(-25%);
+            }
+            /* Styling for form inside dialog box */
+            
+            .dialog-box form {
+                background-color: #fff;
+                padding: 15px;
+                border-radius: 5px;
+                max-width: 600px;
+                width: 100%;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            }
+            /* Styling for form labels */
+            
+            .dialog-box form label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            /* Styling for form input fields */
+            
+            .dialog-box form input[type="text"],
+            .dialog-box form input[type="email"],
+            .dialog-box form input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                border: none;
+                box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+            }
+            /* Styling for error message */
+            
+            .dialog-box form .error-message {
+                color: red;
+                margin-bottom: 10px;
+            }
+            /* Styling for dialog box buttons */
+            
+            .dialog-buttons {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 10px;
+            }
+            
+            .dialog-buttons button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+            
+            .dialog-buttons button.dialogButton {
+                background-color: #ccc;
+                color: black;
+            }
+            
+            .dialog-buttons button.dialogButton:hover {
+                background-color: #bbb;
+            }
+            /* Media query for screens smaller than 768px */
+            
+            @media screen and (max-width: 767px) {
+                .dialog-box form {
+                    max-width: 100%;
+                }
+            }
+            /* Media query for screens smaller than 576px */
+            
+            @media screen and (max-width: 575px) {
+                .dialog-box form input[type="text"],
+                .dialog-box form input[type="email"],
+                .dialog-box form input[type="password"] {
+                    font-size: 16px;
+                    padding: 8px;
+                }
+            }
