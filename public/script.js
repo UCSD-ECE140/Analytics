@@ -83,9 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             registrationMessage.innerText = 'Account created successfully';
             registrationMessage.style.color = 'darkgreen';
             registrationForm.reset();
+
         }
     }
 
-    // Add form submission event listener
-    registrationForm.addEventListener('submit', handleFormSubmission);
-});
